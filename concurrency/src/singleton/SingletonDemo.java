@@ -3,7 +3,7 @@ package singleton;
 /**
  * 
  * Date: 2019/9/29
- *
+ * zhugp auth
  */
 public class SingletonDemo {
 
