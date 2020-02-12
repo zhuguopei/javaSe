@@ -1,13 +1,5 @@
 package test;
 
-import com.sun.management.ThreadMXBean;
-import lock.PessimisticLock;
-import singleton.SingletonDemo;
-
-import java.lang.management.ThreadInfo;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 /**
  * User: 86131
  * Date: 2019/9/29
