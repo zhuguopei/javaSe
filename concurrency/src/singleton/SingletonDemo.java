@@ -16,4 +16,9 @@ public class SingletonDemo {
     public static Singleton getSingleton() {
         return Singleton.singleton;
     }
+    
+    public static Singleton get() {
+        if(singleton != null) {
+            return singleton;
+    }
 }
