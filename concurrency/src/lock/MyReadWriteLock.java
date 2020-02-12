@@ -55,8 +55,5 @@ public class MyReadWriteLock {
     }
 
 
-    public static void main(String[] args) {
-
-    }
-
+   
 }
