@@ -3,7 +3,6 @@ package lock;
 /**
  * User: 86131
  * Date: 2019/9/24
- *zhugp
  */
 public class MyReadWriteLockTest2 {
 
