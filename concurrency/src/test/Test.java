@@ -15,6 +15,10 @@ public class Test {
         ch[0] = 'c';
         return str;
     }
+    
+    public void get() {
+        System.out.println("获取");
+    }
 
 
     public static void main(String[] args) {
@@ -44,7 +48,7 @@ public class Test {
 */
 
 
-        /*ExecutorService executorService1 = Executors.newFixedThreadPool(20);
+        ExecutorService executorService1 = Executors.newFixedThreadPool(20);
         for (int i = 0; i < 20 ; i++) {
             executorService1.execute(new Runnable() {
                 @Override
@@ -54,6 +58,6 @@ public class Test {
             });
         }
 
-        executorService1.shutdown();*/
+        executorService1.shutdown();
     }
 }
