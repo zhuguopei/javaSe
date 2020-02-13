@@ -66,7 +66,6 @@ public class LambdaDemo {
         List<Person> filterList = list.stream().filter(item -> item.getName().equals("张1")).collect(Collectors.toList());
         filterList.forEach(item -> System.out.println(item));
         System.out.println("\n");
-
         // 提取元素 map()
         List<String> nameList = list.stream().map(item -> item.getName()).collect(Collectors.toList());
         nameList.forEach(item -> System.out.println(item));
