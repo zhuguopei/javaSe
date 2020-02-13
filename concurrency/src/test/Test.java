@@ -21,6 +21,10 @@ public class Test {
         ch[0] = 'c';
         return str;
     }
+    
+    public void get() {
+        System.out.println("获取");
+    }
 
     public String getString() {
         return Test.str;
