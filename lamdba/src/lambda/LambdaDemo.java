@@ -80,7 +80,6 @@ public class LambdaDemo {
         sortedAgeList.forEach(item -> System.out.println(item));
 
         System.out.println("\n");
-
         // 统计 sum()
         int sum = list.stream().mapToInt(Person::getAge).sum();
         System.out.println(sum);
