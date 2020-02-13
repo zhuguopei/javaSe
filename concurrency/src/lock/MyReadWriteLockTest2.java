@@ -26,7 +26,7 @@ public class MyReadWriteLockTest2 {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                myReadWriteLock.put("a", "宝马X3");
+                myReadWriteLock.put("a", "宝马X5");
             }
         }).start();
         new Thread(new Runnable() {
