@@ -65,7 +65,6 @@ public class LambdaDemo {
         // 过滤 filter(item{})
         List<Person> filterList = list.stream().filter(item -> item.getName().equals("张1")).collect(Collectors.toList());
         filterList.forEach(item -> System.out.println(item));
-
         System.out.println("\n");
 
         // 提取元素 map()
