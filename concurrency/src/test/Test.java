@@ -1,5 +1,11 @@
 package test;
 
+import lock.PessimisticLock;
+import singleton.SingletonDemo;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 /**
  * User: 86131
  * Date: 2019/9/29
@@ -16,6 +22,10 @@ public class Test {
         return str;
     }
 
+    public String getString() {
+        return Test.str;
+    }
+
 
     public static void main(String[] args) {
 
@@ -26,9 +36,11 @@ public class Test {
 
         System.out.println(s);
 
+
+
         
 
-       /* ExecutorService executorService = Executors.newFixedThreadPool(20);
+        ExecutorService executorService = Executors.newFixedThreadPool(20);
 
         for (int i = 0; i < 200; i++) {
             executorService.execute(new Runnable() {
@@ -41,10 +53,9 @@ public class Test {
             });
         }
         executorService.shutdown();
-*/
 
 
-        /*ExecutorService executorService1 = Executors.newFixedThreadPool(20);
+        ExecutorService executorService1 = Executors.newFixedThreadPool(20);
         for (int i = 0; i < 20 ; i++) {
             executorService1.execute(new Runnable() {
                 @Override
@@ -54,6 +65,6 @@ public class Test {
             });
         }
 
-        executorService1.shutdown();*/
+        executorService1.shutdown();
     }
 }
