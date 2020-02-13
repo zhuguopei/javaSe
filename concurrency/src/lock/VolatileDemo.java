@@ -26,9 +26,28 @@ public class VolatileDemo {
             @Override
             public void run() {
                 while (!v.flag) {
-
+                    System.out.println("不执行行程");
                 }
                 System.out.println(Thread.currentThread().getName() + "执行线程2");
+            }
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (!v.flag) {
+                System.out.println(Thread.currentThread().getName() + "不执行线程2");
+                }
+                System.out.println(Thread.currentThread().getName() + "执行线程2");
+            }
+        }).start();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (!v.flag) {
+                 System.out.println(Thread.currentThread().getName() + "不执行线程3");
+                }
+                System.out.println(Thread.currentThread().getName() + "执行线程3");
             }
         }).start();
     }

@@ -5,6 +5,7 @@ import java.util.concurrent.*;
 /**
  * User: 86131
  * Date: 2019/11/20
+ * 带返回值的线程
  */
 public class CallableDemo  {
 

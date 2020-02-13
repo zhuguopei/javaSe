@@ -9,7 +9,6 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 /**
  * User: 86131
  * Date: 2019/9/24
- *
  * 读写锁
  */
 public class MyReadWriteLock {
@@ -40,7 +39,6 @@ public class MyReadWriteLock {
     }
 
 
-
     public void put(String key, Object value) {
         write.lock();
         System.out.println(Thread.currentThread().getName()+ " write 操作执行");
@@ -57,8 +55,5 @@ public class MyReadWriteLock {
     }
 
 
-    public static void main(String[] args) {
-
-    }
-
+   
 }

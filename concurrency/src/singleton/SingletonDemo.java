@@ -1,8 +1,9 @@
 package singleton;
 
 /**
- * User: 86131
+ * 
  * Date: 2019/9/29
+ *
  */
 public class SingletonDemo {
 
@@ -14,5 +15,12 @@ public class SingletonDemo {
 
     public static Singleton getSingleton() {
         return Singleton.singleton;
+    }
+    
+    public static Singleton get() {
+        if(Singleton.singleton != null) {
+            return Singleton.singleton;
+        }
+        return null;
     }
 }
