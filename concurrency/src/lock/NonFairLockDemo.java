@@ -11,7 +11,7 @@ import static sun.swing.SwingUtilities2.submit;
  * Date: 2019/9/24
  * <p>
  * 不公平锁
- * zhugp
+ * zhuguopei
  */
 public class NonFairLockDemo {
 
