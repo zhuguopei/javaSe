@@ -30,3 +30,5 @@ dep2.sh
  
 #log
 *.log
+
+target/
