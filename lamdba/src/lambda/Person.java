@@ -5,6 +5,7 @@ package lambda;
  * Date: 2020/2/13
  */
 public class Person {
+
     private String name;
     private int age;
     private int size;
